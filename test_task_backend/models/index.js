@@ -2,7 +2,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 const SuperheroesModel = require('./Superhero');
 const ImageModel = require('./Image');
 
-const sequelize = new Sequelize('test_task', 'postgres', '120306', {
+const sequelize = new Sequelize('test_task', 'postgres', '', {
     dialect: 'postgres',
     host: 'localhost',
 });
