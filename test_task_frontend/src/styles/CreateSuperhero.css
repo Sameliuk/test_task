@@ -1,0 +1,127 @@
+.create-form {
+    background-color: #3a1f4a;
+    color: #fded91;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.create-form h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 0 0 1rem 0;
+}
+
+.create-form input,
+.create-form textarea {
+    background-color: #4b2a5a;
+    color: #fcf7de;
+    border: 1px solid #6a3b7a;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.create-form input:focus,
+.create-form textarea:focus {
+    border-color: #ffd700;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+}
+
+.create-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.create-form .images {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.create-form .images label {
+    font-weight: bold;
+}
+
+.create-form .images input {
+    margin: 0;
+}
+
+.create-form .images button {
+    background-color: #5c3672;
+    color: #fdf1af;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    align-self: flex-start;
+}
+
+.create-form .images button:hover {
+    background-color: #755090;
+    transform: translateY(-1px);
+}
+
+.create-form button.submit-btn {
+    background-color: #ffd700;
+    color: #3a1f4a;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+    align-self: flex-end;
+}
+
+.create-form button.submit-btn:hover {
+    background-color: #e6c200;
+    transform: translateY(-2px);
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700;
+    padding: 0.5rem 0;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-right: 100%;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .create-form {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .create-form h2 {
+        font-size: 1.5rem;
+    }
+}

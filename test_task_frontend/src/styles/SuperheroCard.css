@@ -1,0 +1,43 @@
+.superhero-card {
+    flex: 0 0 calc((100% - 40px) / 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.superhero-card:hover {
+    transform: translateY(-5px);
+}
+
+.superhero-images img {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+}
+
+.superhero-info {
+    text-align: center;
+    width: 100%;
+}
+
+.superhero-info h3 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #fdf1af;
+    transition: color 0.2s;
+}
+
+.superhero-info h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.superhero-info h3 a:hover {
+    color: #ffd700;
+}
